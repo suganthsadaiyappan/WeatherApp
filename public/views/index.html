@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <title>Weather App - Suganth</title>
+</head>
+
+<body>
+    <section class="city-section">
+        <div class="city-container">
+            <div class="city-details">
+                <div class="city-selection">
+                    <div class="city-icon">
+                        <img src="" alt="" srcset="" />
+                    </div>
+                    <form autocomplete="off" action="">
+                        <div class="city-input">
+                            <input type="text" name="cities" id="city" value="Anadyr" />
+                        </div>
+                    </form>
+                    <div class="city-time">
+                        <div class="time font-weight-300">
+                            <span class="seconds">40</span>
+                        </div>
+                        <img class="ampmstate" src="" alt="" />
+                        <div class="date font-weight-400"></div>
+                    </div>
+                </div>
+
+                <div class="city-weatherinfo">
+                    <div class="city-temp-celsius">
+                        <h4 class="font-weight-300">Temp °C</h4>
+                        <p>25 C</p>
+                    </div>
+                    <div class="city-humidity">
+                        <h4 class="font-weight-300">Humidity</h4>
+                        <p>26</p>
+                        <span>%</span>
+                    </div>
+                    <div class="city-temp-fahr">
+                        <h4 class="font-weight-300">Temp F</h4>
+                        <p>78 F</p>
+                    </div>
+                    <div class="city-precipitation">
+                        <h4 class="font-weight-300">Precipitation</h4>
+                        <p>0</p>
+                        <span>%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="city-futureforecast">
+                <div class="time flexcontainer">
+                    <div class="time-0 font-weight-300">Now</div>
+                    <div class="time-1 font-weight-300"></div>
+                    <div class="time-2 font-weight-300"></div>
+                    <div class="time-3 font-weight-300"></div>
+                    <div class="time-4 font-weight-300"></div>
+                    <div class="time-5 font-weight-300"></div>
+                </div>
+                <div class="time-bar flexcontainer">
+                    <div class="time-bar-1 font-weight-100">|</div>
+                    <div class="time-bar-2 font-weight-300">|</div>
+                    <div class="time-bar-3 font-weight-100">|</div>
+                    <div class="time-bar-4 font-weight-300">|</div>
+                    <div class="time-bar-5 font-weight-100">|</div>
+                    <div class="time-bar-6 font-weight-300">|</div>
+                    <div class="time-bar-7 font-weight-100">|</div>
+                    <div class="time-bar-8 font-weight-300">|</div>
+                    <div class="time-bar-9 font-weight-100">|</div>
+                    <div class="time-bar-10 font-weight-300">|</div>
+                    <div class="time-bar-11 font-weight-100">|</div>
+                </div>
+                <div class="time-icons flexcontainer">
+                    <div class="time-icons-0 font-weight-300">
+                        <img src="" alt="" />
+                    </div>
+                    <div class="time-icons-1 font-weight-300">
+                        <img src="" alt="" />
+                    </div>
+                    <div class="time-icons-2 font-weight-300">
+                        <img src="" alt="" />
+                    </div>
+                    <div class="time-icons-3 font-weight-300">
+                        <img src="" alt="" />
+                    </div>
+                    <div class="time-icons-4 font-weight-300">
+                        <img src="" alt="" />
+                    </div>
+                    <div class="time-icons-5 font-weight-300">
+                        <img src="" alt="" />
+                    </div>
+                </div>
+                <div class="time-temp flexcontainer">
+                    <div class="time-temp-0 font-weight-300"></div>
+                    <div class="time-temp-1 font-weight-300"></div>
+                    <div class="time-temp-2 font-weight-300"></div>
+                    <div class="time-temp-3 font-weight-300"></div>
+                    <div class="time-temp-4 font-weight-300"></div>
+                    <div class="time-temp-5 font-weight-300"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="top-cities">
+        <div class="preferences">
+            <div class="preferences-title font-weight-100">
+                Top cities around the world
+            </div>
+            <div class="preferences-icons">
+                <a class="active"><img src="assets/WeatherIcons/sunnyIcon.svg" alt="" /></a>
+                <a class=""><img src="assets/WeatherIcons/snowflakeIcon.svg" alt="" /></a>
+                <a class=""><img src="assets/WeatherIcons/rainyIcon.svg" alt="" /></a>
+                <p class="font-weight-100">Display Top</p>
+                <input type="number" class="number-input" id="amountInput" value="4" />
+            </div>
+        </div>
+        <div class="cities-carousel">
+            <div class="left-arrow"><a class="left-button" href=""></a></div>
+            <div class="card-container">
+            </div>
+            <div class="right-arrow"><a class="right-button" href=""></a></div>
+        </div>
+    </section>
+    <section class="continents">
+        <div class="continents-container">
+            <div class="continents-title font-weight-100">Cities across continents at a glance</div>
+            <a class="continents-name-list font-weight-100">Continent Name<img
+                    src="assets/GeneralImagesIcons/arrowDown.svg" alt=""></a>
+            <a class="continents-temp-list font-weight-100">Temperature<img src="assets/GeneralImagesIcons/arrowUp.svg"
+                    alt=""></a>
+        </div>
+        <div class="continents-card-container">
+        </div>
+    </section>
+</body>
+<script src="js/index.js" type="module"></script>
+
+</html>
